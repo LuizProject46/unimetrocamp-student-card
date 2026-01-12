@@ -136,13 +136,11 @@ const StudentCard = ({
             
             {/* QR Code with validity link */}
             <a 
-              href={`https://validacao.wyden.com.br/estudante/${ra}`}
-              target="_blank"
-              rel="noopener noreferrer"
+              href={`/validacao/${ra}`}
               className="w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow-md hover:scale-105 transition-transform"
             >
               <QRCodeSVG 
-                value={`https://validacao.wyden.com.br/estudante/${ra}`}
+                value={`${window.location.origin}/validacao/${ra}`}
                 size={48}
                 level="M"
                 fgColor="#003366"
