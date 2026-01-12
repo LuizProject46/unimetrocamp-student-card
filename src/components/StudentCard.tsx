@@ -1,4 +1,5 @@
-import { User, GraduationCap, Calendar, Hash, Building2, QrCode } from "lucide-react";
+import { User, GraduationCap, Calendar, Hash, Building2 } from "lucide-react";
+import { QRCodeSVG } from "qrcode.react";
 
 interface StudentCardProps {
   name: string;
@@ -133,10 +134,20 @@ const StudentCard = ({
               </div>
             </div>
             
-            {/* QR Code placeholder */}
-            <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow-md">
-              <QrCode className="w-10 h-10 text-wyden-blue" />
-            </div>
+            {/* QR Code with validity link */}
+            <a 
+              href={`https://validacao.wyden.com.br/estudante/${ra}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow-md hover:scale-105 transition-transform"
+            >
+              <QRCodeSVG 
+                value={`https://validacao.wyden.com.br/estudante/${ra}`}
+                size={48}
+                level="M"
+                fgColor="#003366"
+              />
+            </a>
           </div>
         </div>
 
