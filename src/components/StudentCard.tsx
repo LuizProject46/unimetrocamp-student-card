@@ -25,7 +25,7 @@ const StudentCard = ({
       {/* Card Container */}
       <div className="relative card-gradient rounded-2xl student-card-shadow overflow-hidden transform transition-all duration-500 hover:scale-[1.02]">
         {/* Decorative Elements */}
-        <div className="absolute top-0 right-0 w-40 h-40 bg-wyden-orange/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+        <div className="absolute top-0 right-0 w-40 h-40 bg-wyden-accent/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
         <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full blur-2xl translate-y-1/2 -translate-x-1/2" />
         
         {/* Header with Institution */}
@@ -38,7 +38,7 @@ const StudentCard = ({
               <h1 className="text-2xl font-bold text-white tracking-tight">
                 UniMetrocamp
               </h1>
-              <span className="text-wyden-orange font-semibold text-sm mt-0.5">
+              <span className="text-wyden-accent font-semibold text-sm mt-0.5">
                 Wyden
               </span>
             </div>
@@ -93,7 +93,7 @@ const StudentCard = ({
 
                 {/* RA */}
                 <div className="flex items-center gap-2">
-                  <Hash className="w-4 h-4 text-wyden-orange" />
+                  <Hash className="w-4 h-4 text-wyden-accent" />
                   <div>
                     <label className="text-white/50 text-[10px] uppercase tracking-wider font-medium">
                       RA
@@ -106,7 +106,7 @@ const StudentCard = ({
 
                 {/* Course */}
                 <div className="flex items-center gap-2">
-                  <GraduationCap className="w-4 h-4 text-wyden-orange" />
+                  <GraduationCap className="w-4 h-4 text-wyden-accent" />
                   <div>
                     <label className="text-white/50 text-[10px] uppercase tracking-wider font-medium">
                       Curso
@@ -125,7 +125,7 @@ const StudentCard = ({
         <div className="relative px-6 py-4 glass-effect">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Calendar className="w-4 h-4 text-wyden-orange" />
+              <Calendar className="w-4 h-4 text-wyden-accent" />
               <div>
                 <label className="text-white/50 text-[9px] uppercase tracking-wider">
                   Válido até
@@ -143,7 +143,7 @@ const StudentCard = ({
                 value={`${window.location.origin}/validacao/${ra}`}
                 size={48}
                 level="M"
-                fgColor="#003366"
+                fgColor="#44002d"
               />
             </a>
           </div>

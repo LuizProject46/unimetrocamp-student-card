@@ -51,11 +51,11 @@ export default {
           foreground: "hsl(var(--card-foreground))",
         },
         wyden: {
-          blue: "hsl(var(--wyden-blue))",
-          "blue-dark": "hsl(var(--wyden-blue-dark))",
-          "blue-light": "hsl(var(--wyden-blue-light))",
-          orange: "hsl(var(--wyden-orange))",
-          "orange-light": "hsl(var(--wyden-orange-light))",
+          primary: "hsl(var(--wyden-primary))",
+          "primary-dark": "hsl(var(--wyden-primary-dark))",
+          "primary-light": "hsl(var(--wyden-primary-light))",
+          accent: "hsl(var(--wyden-accent))",
+          "accent-light": "hsl(var(--wyden-accent-light))",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",

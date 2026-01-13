@@ -6,102 +6,102 @@
 
 @layer base {
   :root {
-    /* Wyden/Unimetrocamp Brand Colors */
-    --background: 210 20% 98%;
-    --foreground: 212 80% 15%;
+    /* Wyden/Unimetrocamp Brand Colors - #44002d */
+    --background: 330 20% 98%;
+    --foreground: 330 100% 9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 212 80% 15%;
+    --card-foreground: 330 100% 9%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 212 80% 15%;
+    --popover-foreground: 330 100% 9%;
 
-    /* Primary: Azul Wyden */
-    --primary: 212 80% 25%;
+    /* Primary: Vinho Wyden #44002d */
+    --primary: 330 100% 13%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary: Azul mais claro */
-    --secondary: 212 60% 95%;
-    --secondary-foreground: 212 80% 25%;
+    /* Secondary: Tom mais claro */
+    --secondary: 330 30% 95%;
+    --secondary-foreground: 330 100% 13%;
 
-    /* Accent: Laranja Wyden */
-    --accent: 24 95% 53%;
+    /* Accent: Dourado/Âmbar */
+    --accent: 38 95% 53%;
     --accent-foreground: 0 0% 100%;
 
-    --muted: 210 20% 96%;
-    --muted-foreground: 212 30% 45%;
+    --muted: 330 20% 96%;
+    --muted-foreground: 330 30% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 212 30% 88%;
-    --input: 212 30% 88%;
-    --ring: 212 80% 25%;
+    --border: 330 20% 88%;
+    --input: 330 20% 88%;
+    --ring: 330 100% 13%;
 
     --radius: 0.75rem;
 
     /* Custom tokens for student card */
-    --wyden-blue: 212 80% 25%;
-    --wyden-blue-dark: 212 85% 18%;
-    --wyden-blue-light: 212 60% 40%;
-    --wyden-orange: 24 95% 53%;
-    --wyden-orange-light: 24 95% 65%;
-    --card-shadow: 0 25px 50px -12px hsl(212 80% 25% / 0.25);
-    --card-shadow-hover: 0 30px 60px -15px hsl(212 80% 25% / 0.35);
+    --wyden-primary: 330 100% 13%;
+    --wyden-primary-dark: 330 100% 9%;
+    --wyden-primary-light: 330 60% 25%;
+    --wyden-accent: 38 95% 53%;
+    --wyden-accent-light: 38 95% 65%;
+    --card-shadow: 0 25px 50px -12px hsl(330 100% 13% / 0.25);
+    --card-shadow-hover: 0 30px 60px -15px hsl(330 100% 13% / 0.35);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 212 80% 25%;
+    --sidebar-primary: 330 100% 13%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 24 95% 53%;
+    --sidebar-accent: 38 95% 53%;
     --sidebar-accent-foreground: 0 0% 100%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 212 80% 25%;
+    --sidebar-border: 330 13% 91%;
+    --sidebar-ring: 330 100% 13%;
   }
 
   .dark {
-    --background: 212 85% 8%;
-    --foreground: 210 40% 98%;
+    --background: 330 50% 5%;
+    --foreground: 0 0% 98%;
 
-    --card: 212 80% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 330 50% 8%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 212 80% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 330 50% 8%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 24 95% 53%;
+    --primary: 330 80% 30%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 212 60% 20%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 330 40% 18%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 212 50% 18%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 330 40% 15%;
+    --muted-foreground: 330 20% 65%;
 
-    --accent: 24 95% 53%;
+    --accent: 38 95% 53%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 212 50% 20%;
-    --input: 212 50% 20%;
-    --ring: 24 95% 53%;
+    --border: 330 40% 18%;
+    --input: 330 40% 18%;
+    --ring: 38 95% 53%;
 
-    --wyden-blue: 212 60% 40%;
-    --wyden-blue-dark: 212 80% 25%;
-    --wyden-blue-light: 212 50% 55%;
-    --wyden-orange: 24 95% 53%;
-    --wyden-orange-light: 24 95% 65%;
+    --wyden-primary: 330 80% 30%;
+    --wyden-primary-dark: 330 100% 13%;
+    --wyden-primary-light: 330 60% 45%;
+    --wyden-accent: 38 95% 53%;
+    --wyden-accent-light: 38 95% 65%;
 
-    --sidebar-background: 212 85% 10%;
+    --sidebar-background: 330 50% 6%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 24 95% 53%;
+    --sidebar-primary: 38 95% 53%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 212 60% 20%;
+    --sidebar-accent: 330 40% 18%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 212 50% 18%;
-    --sidebar-ring: 24 95% 53%;
+    --sidebar-border: 330 40% 15%;
+    --sidebar-ring: 38 95% 53%;
   }
 }
 
@@ -118,11 +118,11 @@
 
 @layer utilities {
   .card-gradient {
-    background: linear-gradient(135deg, hsl(var(--wyden-blue)) 0%, hsl(var(--wyden-blue-dark)) 100%);
+    background: linear-gradient(135deg, hsl(var(--wyden-primary)) 0%, hsl(var(--wyden-primary-dark)) 100%);
   }
 
   .accent-gradient {
-    background: linear-gradient(90deg, hsl(var(--wyden-orange)) 0%, hsl(var(--wyden-orange-light)) 100%);
+    background: linear-gradient(90deg, hsl(var(--wyden-accent)) 0%, hsl(var(--wyden-accent-light)) 100%);
   }
 
   .glass-effect {
