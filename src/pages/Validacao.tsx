@@ -46,7 +46,7 @@ const Validacao = () => {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-wyden-blue/5 py-8 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-green-50 via-white to-wyden-primary/5 py-8 px-4">
       <div className="max-w-lg mx-auto space-y-6">
         {/* Header de Validação */}
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
@@ -68,8 +68,8 @@ const Validacao = () => {
             {/* Instituição */}
             <div className="text-center pb-4 border-b border-gray-100">
               <p className="text-gray-500 text-xs uppercase tracking-wider">Centro Universitário</p>
-              <h2 className="text-2xl font-bold text-wyden-blue">UniMetrocamp</h2>
-              <p className="text-wyden-orange font-semibold">Grupo Wyden</p>
+              <h2 className="text-2xl font-bold text-wyden-primary">UniMetrocamp</h2>
+              <p className="text-wyden-accent font-semibold">Grupo Wyden</p>
             </div>
 
             {/* Nome */}
@@ -82,7 +82,7 @@ const Validacao = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-gray-50 rounded-xl p-4">
                 <div className="flex items-center gap-2 mb-1">
-                  <Hash className="w-4 h-4 text-wyden-orange" />
+                  <Hash className="w-4 h-4 text-wyden-accent" />
                   <p className="text-gray-500 text-xs uppercase tracking-wider">RA</p>
                 </div>
                 <p className="text-gray-900 font-semibold">{student.ra}</p>
@@ -90,7 +90,7 @@ const Validacao = () => {
 
               <div className="bg-gray-50 rounded-xl p-4">
                 <div className="flex items-center gap-2 mb-1">
-                  <Building2 className="w-4 h-4 text-wyden-orange" />
+                  <Building2 className="w-4 h-4 text-wyden-accent" />
                   <p className="text-gray-500 text-xs uppercase tracking-wider">Campus</p>
                 </div>
                 <p className="text-gray-900 font-semibold">{student.campus}</p>
@@ -98,7 +98,7 @@ const Validacao = () => {
 
               <div className="bg-gray-50 rounded-xl p-4 col-span-2">
                 <div className="flex items-center gap-2 mb-1">
-                  <GraduationCap className="w-4 h-4 text-wyden-orange" />
+                  <GraduationCap className="w-4 h-4 text-wyden-accent" />
                   <p className="text-gray-500 text-xs uppercase tracking-wider">Curso</p>
                 </div>
                 <p className="text-gray-900 font-semibold">{student.course}</p>
@@ -106,7 +106,7 @@ const Validacao = () => {
 
               <div className="bg-gray-50 rounded-xl p-4">
                 <div className="flex items-center gap-2 mb-1">
-                  <Calendar className="w-4 h-4 text-wyden-orange" />
+                  <Calendar className="w-4 h-4 text-wyden-accent" />
                   <p className="text-gray-500 text-xs uppercase tracking-wider">Válido até</p>
                 </div>
                 <p className="text-gray-900 font-semibold">{student.validUntil}</p>
@@ -114,7 +114,7 @@ const Validacao = () => {
 
               <div className="bg-gray-50 rounded-xl p-4">
                 <div className="flex items-center gap-2 mb-1">
-                  <Clock className="w-4 h-4 text-wyden-orange" />
+                  <Clock className="w-4 h-4 text-wyden-accent" />
                   <p className="text-gray-500 text-xs uppercase tracking-wider">Modalidade</p>
                 </div>
                 <p className="text-gray-900 font-semibold">{student.modality}</p>
@@ -132,7 +132,7 @@ const Validacao = () => {
         {/* Informações de Segurança */}
         <div className="bg-white rounded-2xl shadow-lg p-6">
           <div className="flex items-center gap-3 mb-4">
-            <Shield className="w-6 h-6 text-wyden-blue" />
+            <Shield className="w-6 h-6 text-wyden-primary" />
             <h3 className="text-gray-900 font-bold">Informações de Autenticação</h3>
           </div>
           
