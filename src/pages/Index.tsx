@@ -1,5 +1,6 @@
 import StudentCard from "@/components/StudentCard";
 import { Shield, CheckCircle } from "lucide-react";
+import studentPhoto from "@/assets/student-photo.png";
 
 const Index = () => {
   return (
@@ -36,6 +37,7 @@ const Index = () => {
             institution="UniMetrocamp"
             campus="Campinas"
             validUntil="12/2026"
+            photoUrl={studentPhoto}
           />
         </div>
 
