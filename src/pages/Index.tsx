@@ -1,8 +1,11 @@
 import StudentCard from "@/components/StudentCard";
-import { Shield, CheckCircle } from "lucide-react";
-import studentPhoto from "@/assets/student-photo.png";
+import { CheckCircle } from "lucide-react";
+import { studentData, getLatestEnrollmentDate } from "@/data/studentData";
 
 const Index = () => {
+  const latestEnrollment = getLatestEnrollmentDate();
+  const activeEnrollment = studentData.enrollments.find(e => e.status === "ATIVO");
+
   return (
     <div className="min-h-screen bg-background">
       {/* Background Pattern */}
@@ -12,32 +15,16 @@ const Index = () => {
       </div>
 
       <div className="relative z-10 container mx-auto px-4 py-8 md:py-16">
-        {/* Header */}
-        <header className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-secondary rounded-full mb-4">
-            <Shield className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">
-              Carteirinha Digital Oficial
-            </span>
-          </div>
-          <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-            Carteirinha de Estudante
-          </h1>
-          <p className="text-muted-foreground max-w-md mx-auto">
-            UniMetrocamp Wyden • Ensino Superior de Qualidade
-          </p>
-        </header>
-
         {/* Student Card */}
         <div className="mb-12">
           <StudentCard
-            name="Luiz Gustavo Moreira de Oliveira"
-            ra="202051417341"
-            course="Ciência da Computação"
-            institution="UniMetrocamp"
-            campus="Campinas"
-            validUntil="12/2026"
-            photoUrl={studentPhoto}
+            name={studentData.name}
+            ra={studentData.ra}
+            course={studentData.course}
+            institution={studentData.institution}
+            campus={studentData.campus}
+            validUntil={studentData.validUntil}
+            photoUrl={studentData.photoUrl}
           />
         </div>
 
@@ -64,7 +51,7 @@ const Index = () => {
                   Período
                 </span>
                 <span className="font-medium text-secondary-foreground">
-                  2025.1
+                  {activeEnrollment?.semester || "2025.1"}
                 </span>
               </div>
               <div className="bg-secondary/50 rounded-lg p-3">
@@ -72,7 +59,23 @@ const Index = () => {
                   Modalidade
                 </span>
                 <span className="font-medium text-secondary-foreground">
-                  Presencial
+                  {studentData.modality}
+                </span>
+              </div>
+              <div className="bg-secondary/50 rounded-lg p-3">
+                <span className="text-muted-foreground text-xs block mb-1">
+                  Matrícula desde
+                </span>
+                <span className="font-medium text-secondary-foreground">
+                  {latestEnrollment}
+                </span>
+              </div>
+              <div className="bg-secondary/50 rounded-lg p-3">
+                <span className="text-muted-foreground text-xs block mb-1">
+                  Válido até
+                </span>
+                <span className="font-medium text-secondary-foreground">
+                  {studentData.validUntil}
                 </span>
               </div>
             </div>
