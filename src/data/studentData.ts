@@ -45,12 +45,6 @@ export const studentData: StudentData = {
   modality: "Presencial",
   photoUrl: studentPhoto,
   enrollments: [
-    { date: "02/2020", semester: "2020.1", status: "INATIVO" },
-    { date: "08/2020", semester: "2020.2", status: "INATIVO" },
-    { date: "02/2021", semester: "2021.1", status: "INATIVO" },
-    { date: "08/2021", semester: "2021.2", status: "INATIVO" },
-    { date: "02/2022", semester: "2022.1", status: "INATIVO" },
-    { date: "08/2022", semester: "2022.2", status: "INATIVO" },
     { date: "02/2023", semester: "2023.1", status: "INATIVO" },
     { date: "08/2023", semester: "2023.2", status: "INATIVO" },
     { date: "02/2024", semester: "2024.1", status: "INATIVO" },
