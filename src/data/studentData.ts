@@ -55,12 +55,14 @@ export const studentData: StudentData = {
     { date: "08/2023", semester: "2023.2", status: "INATIVO" },
     { date: "02/2024", semester: "2024.1", status: "INATIVO" },
     { date: "08/2024", semester: "2024.2", status: "INATIVO" },
-    { date: "02/2025", semester: "2025.1", status: "ATIVO" },
+    { date: "02/2025", semester: "2025.1", status: "INATIVO" },
+    { date: "08/2025", semester: "2025.2", status: "INATIVO" },
+    { date: "02/2026", semester: "2026.1", status: "ATIVO" },
   ],
   semesters: [
     {
-      id: "2025.1",
-      label: "2025 – 1º Semestre",
+      id: "2026.1",
+      label: "2026 – 1º Semestre",
       active: true,
       subjects: [
         {
